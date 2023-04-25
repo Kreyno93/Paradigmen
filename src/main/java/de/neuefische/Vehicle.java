@@ -1,6 +1,6 @@
 package de.neuefische;
 
-public class Vehicle implements Accelerateable {
+public abstract class Vehicle implements Accelerateable {
 
     private String brand;
     private int numberOfWheels;
@@ -40,8 +40,6 @@ public class Vehicle implements Accelerateable {
     }
 
     @Override
-    public String accelerate() {
-        return "no identified vehicle";
-    }
+    public abstract String accelerate();
 
 }
