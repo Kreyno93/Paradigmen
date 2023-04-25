@@ -1,7 +1,5 @@
 package de.neuefische;
 
-import java.util.Objects;
-
 public class Car extends Vehicle {
 
     private boolean seatbelt;
@@ -17,4 +15,11 @@ public class Car extends Vehicle {
     public boolean isSeatbelt() {
         return seatbelt;
     }
+
+    @Override
+    public String accelerate(){
+        return "Pedal to the Metal";
+    }
+
+
 }

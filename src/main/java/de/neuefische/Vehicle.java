@@ -1,6 +1,6 @@
 package de.neuefische;
 
-public class Vehicle {
+public class Vehicle implements Accelerateable {
 
     private String brand;
     private int numberOfWheels;
@@ -38,4 +38,10 @@ public class Vehicle {
     public void setHorsePower(int horsePower) {
         this.horsePower = horsePower;
     }
+
+    @Override
+    public String accelerate() {
+        return "no identified vehicle";
+    }
+
 }

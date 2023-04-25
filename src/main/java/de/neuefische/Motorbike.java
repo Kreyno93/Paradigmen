@@ -1,8 +1,6 @@
 package de.neuefische;
 
-import java.util.Objects;
-
-public class Motorbike extends Vehicle {
+public class Motorbike extends Vehicle{
 
     private boolean helmet;
 
@@ -17,4 +15,17 @@ public class Motorbike extends Vehicle {
     public boolean isHelmet() {
         return helmet;
     }
+
+    @Override
+    public String toString() {
+        return "Motorbike{" +
+                "helmet=" + helmet +
+                "} " + super.toString();
+    }
+
+    @Override
+    public String accelerate() {
+        return "Gashahn voll aufdrehen!";
+    }
+
 }
